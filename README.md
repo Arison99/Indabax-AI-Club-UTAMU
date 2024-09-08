@@ -2,7 +2,7 @@ Link to website
 
 This website is designed for Indabax AI Club UTAMU 
 
-The website is writtwn using html & tailwind css
+The website is written using html & tailwind css
 
 B.Arison is the current designer & maintainer of the website
 
