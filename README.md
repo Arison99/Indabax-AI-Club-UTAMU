@@ -7,10 +7,10 @@ The website is written using html & tailwind css
 
 B.Arison is the current designer & maintainer of the website
 
-I am open for suggestions oon the layout & content 
+I am open for suggestions on the layout & content 
 of the website.
 
-You can reach on these platforms:
+You can reach me on these platforms:
 
 byonanebye.arison@student.utamu.ac.ug
 
