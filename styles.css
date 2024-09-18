@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'calibri';
+    box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color:rgb(2, 24, 43);
+        color:#fff;
+    }
+    
+    .container{
+      padding: 10px 10%;  
+    }
+    .sub-title{
+        text-align: center;
+    }
+    .activities-desc{
+        text-align: center;
+    }
+    
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .logo{
+        width: 60px;
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+    nav ul li a{
+        color: white;
+        text-decoration:none;
+        font-size: 18px;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height:3px ;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    #activities{
+        padding: 30px 0;
+        background-color:black;
+    }
+    .activities-list{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        column-gap: 40px;
+        margin-top: 50px;
+    }
+    .activities-list div{
+        margin-bottom: 20px;
+        background: #262626;
+        padding: 40px;
+        font-size: 15px;
+        font-weight: 300;
+        border-radius: 10px;
+        transition: background 0.5s,transform 0.5s;
+    }
+    .activities-list div i{
+    font-size:50px;
+    margin-bottom:30px;
+    }
+    .activities-list div h2{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    .activities-list div a{
+        text-decoration: none;
+        color:rgb(255, 0, 153);
+        font-size: 12px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+    .activities-list div:hover{
+        background:navy;
+        transform: translateX(10px);
+    }
+    .social-icons{
+        margin-top: 30px;
+    }
+    .social-icons a{
+        text-decoration: none;
+        font-size: 30px;
+        margin-right: 15px;
+        color: white;
+    }
+    .social-icons a:hover{
+        color:blue;
+        transform: translateY(-5px);
+    }
+    
+    .copyright{
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        background: #262626;
+        margin-top: 20px;
+        font-weight: 300;
+    }
+    nav .fas{
+        display:none;
+    }
+
+    /*---small screens---*/
+    @media only screen and (max-width:600px){ 
+        .logo{
+         width: 35px;
+     }
+         nav .fas{
+         display:block;
+         font-size: 25px;
+         }
+         nav ul{
+             background: #ff004f;
+             position: fixed;
+             top: 0;
+             right:-200px;
+             width: 200px;
+             height: 100vh;
+             padding-top: 50px;
+             z-index: 2;
+             transition: right 0.5s;
+         }
+         nav ul li{
+             display: block;
+             margin: 25px;
+         }
+         nav ul .fas{
+             position: absolute;
+             top: 25px;
+             left:25px;
+             cursor: pointer;
+         }
+         .sub-title{
+             font-size: 40px;
+         }
+         .copyright{
+             font-size: 14px;
+         }
+         .social-icons{
+         margin-top: 30px;
+         }
+         .social-icons a{
+         text-decoration: none;
+         font-size: 20px;
+         margin-right: 15px;
+         color: white;
+         }
+        }
+  
+    
+    
+    
