@@ -1,5 +1,5 @@
 Link to website:
-
+https://indaxaiclubutamu.github.io/Indabax-AI-Club-UTAMU/
 
 This website is designed for Indabax AI Club UTAMU 
 
