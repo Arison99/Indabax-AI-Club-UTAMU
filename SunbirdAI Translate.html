@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Club Members</title>
-
-   <!--Navbar-->
+    <title>SunbirdAI Translation Page</title>
+    <link rel="icon" type="image/x-icon" href="./img/sunbirdAi.svg">
+    <!--Navbar-->
   <div id="nav-placeholder">
 
     <header class="">
@@ -16,16 +15,16 @@
       <div class="fixed w-full top-0 left-0">
           <header class="bg-black ">
               
-              <div class="px-4 mx-auto sm:px-6 lg:px-8">
-                  <div class="flex itemss-center justify-between h-16 lg:h-20">
+              <div class="px-4 mx-auto sm:px-4 md:px-6 lg:px-8">
+                  <div class="flex sm:items-center sm:justify-between xl:h-16 lg:h-14 md:h-8 sm:h-6">
                       <div class="flex-shrink-0">
                           <a href="index.html" title="" class="flex">
-                              <img class="w-auto h-8" src="IndabaX_Images/Logo_1.jpg" alt="" />
+                              <img class="w-auto h-8 " src="IndabaX_Images/Logo_1.jpg" alt="" />
                           </a>
                       </div>
       
       
-                      <div class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
+                      <div class="hidden xl:flex lg:flex md:flex sm:flex xl:items-center lg:items-center md:items-center sm:items-center xl:justify-center lg:justify-center md:justify-center sm:justify-center xl:space-x-10 lg:space-x-10 md:space-x-10 sm:space-x-10">
                           <a href="index.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80"> Home </a>
       
                           <a href="members.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80"> Members </a>
@@ -45,143 +44,125 @@
           </header>
 
       </div>
-
+    <style>
+        body {
+          background-image: url('./img/sunbirdAi.svg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 98% 24%;
+        }
+        </style>
 </head>
-<!--Club members-->
-
-    <body>
+<body> 
+    
+    <form class="flex-nowrap space-y-8" id="translationForm">
+        <h1 class="text-blue-600 text-center text-bold text-3xl font-mon0" >SunbirdAI Translation Tool</h1><br>
        
-    <div id="members">
-<section class="py-10 bg-black-100 sm:py-16 lg:py-24">
-    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div class="max-w-2xl mx-auto text-center">
-            <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Meet the current members of <span class="hover:text-yellow-500"> Indabax </span> AI Club UTAMU.</h2>
-            <p class="max-w-md mx-auto mt-4 text-base leading-relaxed text-gray-600 font-semibold hover:text-blue-500">We are grateful for everyone who is ready to embrace a future with AI & ML </p>
-        </div>
 
-        <div class="grid grid-cols-2 mt-8 text-center sm:mt-16 lg:mt-20 sm:grid-cols-4 gap-y-8 lg:grid-cols-9 gap-x-0">
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Byonanebye Arison</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Bsc. Software Engineering</p>
-            </div>
+        <div class="space-y-1">
 
-            <div class="hidden lg:block"></div>
+            <label class="text-blue-600 text-center flex justify-center italic text-sm subpixel-antialiased" for="textToTranslate">Text to translate:</label><br>
 
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Ainamani Dickson</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Bsc. Software Engineering</p>
-            </div>
+             <div class="flex justify-center ">
 
-            <div class="hidden lg:block"></div>
+                <textarea class="flex justify-center bg-blue-300 px-4 py-6 text-center rounded-lg shadow-2xl" id="textToTranslate" rows="4" cols="50"></textarea><br>
 
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Balungi Derrick</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Bsc. Information Technology</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Ofwono O</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Bsc. Software Engineering</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Samanya Emmanuel</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Diploma in Computing</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Engoret calvin</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Bsc. Computer Science</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Matovu Nasser</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Bsc. accounting & Finance</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Olara Moses</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Bsc. Software Engineering</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Nabinfa Ruth</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Bsc. Computer Security & Forensics</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Sandile Mduduzi</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Msc. IT & Computer Security </p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Wesene Amedi</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Bsc. Computer Security & Forensics</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Byakatonda Ishmael</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Bsc. Computer Science</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Auma Caezeria</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Diploma in Computing</p>
-            </div>
-
-            <div class="hidden lg:block"></div>
-
-            <div>
-                <img class="object-cover mx-auto rounded-lg w-28 h-28" src="IndabaX_Images/Avatar_1.png" alt="" />
-                <p class="mt-8 text-lg font-semibold leading-tight text-black">Club Member</p>
-                <p class="mt-1 text-base leading-tight text-gray-600">Course</p>
             </div>
         </div>
+
+        <div class="flex flex-wrap justify-center space-x-4" >
+
+         <label class="text-blue-600 text-center text-bold text-lg " for="sourceLang">Source Language:
+            <input class="text-center rounded-lg shadow-lg italic" type="text" id="sourceLang" placeholder="e.g., eng,lug,ach,teo,lgg,nyn"><br>
+         </label>
+
+         <label class="text-blue-600 text-center text-bold text-lg" for="targetLang">Target Language:
+           <input class="text-center rounded-lg shadow-lg italic" type="text" id="targetLang" placeholder="e.g., eng,lug,ach,teo,lgg,nyn"><br>
+         </label>
+
+        </div>
+
+        <div class="flex justify-center">
+
+         <button class="flex text-sm px-2 py-3 bg-blue-600 text-white text-bold text-center bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 rounded-full shadow-md cursor-pointer w-32 place-content-center " type="button" onclick="translateText()">
+                Translate
+            </button>
+
+        </div>
+    </form>
+
+    <div class="space-y-8"><br>
+
+        <h2 class="text-center text-blue-600 text-2xl ">Translation Result:</h2>
+        <div class="flex justify-center text-wrap text-center shadow-sm" id="translationResult"></div>
+
     </div>
-</section>
 
-<!--Footer-->
+    <script>
+        const translationUrl = 'https://api.sunbird.ai/tasks/nllb_translate';
+        const apiToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJBcmlzb245OSIsImFjY291bnRfdHlwZSI6IkZyZWUiLCJleHAiOjQ4ODA1OTkyMDN9.GLuCbrvFGfCTJmebK724_47jGx5jqUNHmAVIvmFfHbw'; // Replace with your actual API token
 
-<section class="py-10 bg-gray-900 sm:pt-16 lg:pt-24 ">
-    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div class="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-4 md:gap-x-12">
+        const requestHeaders = {
+            "Authorization": `Bearer ${apiToken}`,
+            "Content-Type": "application/json"
+        };
+
+
+
+        const getTranslation = async (text, sourceLang, targetLang) => {
+            console.log(`sourceLang ${sourceLang}`);
+            console.log(`targetLang ${targetLang}`);
+
+            const requestOptions = {
+                method: "POST",
+                headers: requestHeaders,
+                body: JSON.stringify({ source_language: sourceLang, target_language: targetLang, text })
+            };
+
+            try {
+                const response = await fetch(translationUrl, requestOptions);
+                if (!response.ok) {
+                    throw new Error(`${response.status} ${response.statusText}`);
+                }
+
+                const responseJson = await response.json();
+                if (!responseJson || !responseJson.output) {
+                    throw new Error("Invalid response structure");
+                }
+
+                const translatedText = responseJson.output.translated_text;
+                console.log(`translatedText ${translatedText}`);
+                return translatedText;
+            } catch (err) {
+                console.error(err);
+                return "Translation failed, try again.";
+            }
+        };
+
+        function translateText() {
+            const text = document.getElementById('textToTranslate').value;
+            const sourceLang = document.getElementById('sourceLang').value;
+            const targetLang = document.getElementById('targetLang').value;
+            const resultContainer = document.getElementById('translationResult');
+
+            getTranslation(text, sourceLang, targetLang).then(translatedText => {
+                resultContainer.innerText = translatedText;
+            }).catch(error => {
+                console.error('Error translating text:', error);
+                resultContainer.innerText = 'Translation failed. Please try again.';
+            });
+        }
+    </script>
+
+    <!--Footer-->
+
+   <section class="py-10 bg-gray-900 sm:pt-16 md:pt-20 lg:pt-24 xl:pt30 ">
+    <div class="px-4 mx-auto sm:px-6 md:px-8 lg:px-10 xl:px-12  max-w-7xl">
+        <div class="grid grid-cols-2 gap-x-5 gap-y-12 sm:grid-cols-4 md:grid-cols-4 md:gap-x-12">
             <div>
                 <p class="text-base text-gray-500">Indabax AI Club UTAMU</p>
 
-                <ul class=" flex lg:items-center lg:justify-left lg:space-x-10">
+                <ul class=" flex sm:items-center md:items-center lg:items-center xl:items-center sm:justify-left md:justify-left lg:justify-left xl:justify-left sm:space-x-10 md:space-x-10 lg:space-x-10 xl:space-x-10">
                     <li>
                         <a href="index.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Home </a>
                     </li>
@@ -207,11 +188,12 @@
 
         <hr class="mt-16 mb-10 border-gray-800" />
 
+       
 
         <div class="flex flex-wrap justify-right">
-            <img class="h-8 auto md:order-1 rounded-full" src="IndabaX_Images/Logo_1.jpg" alt="" />
+            <img class="h-8 auto sm:order-1 md:order-1 lg:order-1 xl:order-1 rounded-full" src="IndabaX_Images/Logo_1.jpg" alt="" />
 
-            <ul class="flex items-center space-x-3 md:order-3">
+            <ul class="flex items-center sm:space-x-3 md:space-x-3 lg:space-x-10 xl:space-x-10 sm:order-3 md:order-3 lg:order-3 xl:order-3">
                 <li>
                     <a href="https://x.com/UTAMU/_AI?t=FR7_QAM60tlkssdK0gaKxQs=09" title="Twitter" class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
                         <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -252,11 +234,9 @@
                 </li>
             </ul>
 
-            <p class="w-full mt-8 text-sm text-center text-gray-100 md:mt-0 md:w-auto md:order-2">© Copyright 2024, All Rights Reserved by Indabax AI Club UTAMU</p>
+            <p class="w-full mt-8 text-sm text-center text-gray-100 sm:mt-0 md:mt-0 lg:mt-0 sm:w-auto md:w-auto lg:w-auto xl:w-auto sm:order-2 md:order-2 lg:order-2 xl:order-2">© Copyright 2024, All Rights Reserved by Indabax AI Club UTAMU</p>
         </div>
     </div>
 </section>
-
-</div>
 </body>
 </html>
