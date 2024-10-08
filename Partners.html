@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+        <link rel="stylesheet" href="styles.css">
         <script src="https://cdn.tailwindcss.com"></script>
         <title> Partners </title>
 
@@ -13,35 +13,22 @@
     <header class="">
   
         
-      <div class="fixed w-full top-0 left-0">
-          <header class="bg-black ">
-              
-              <div class="px-4 mx-auto sm:px-6 lg:px-8">
-                  <div class="flex items-center justify-between h-16 lg:h-20">
-                      <div class="flex-shrink-0">
-                          <a href="index.html" title="" class="flex">
-                              <img class="w-auto h-8" src="IndabaX_Images/Logo_1.jpg" alt="" />
-                          </a>
-                      </div>
-      
-      
-                      <div class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-10">
-                          <a href="index.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80"> Home </a>
-      
-                          <a href="members.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80"> Members </a>
-      
-                          <a href="club-activities.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">Club Activities </a>
-      
-                          <a href="About.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80"> About </a>
-
-                          <a href="Partners.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">Partners </a>
-
-                          <a href="SunbirdAI Translate.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">SunbirdAI </a>
-                      </div>
-      
-                      <a href="About.html" title="" class="hidden lg:inline-flex items-center justify-center px-5 py-2.5 text-base transition-all duration-200 hover:bg-blue-700 hover:text-blue-200 focus:text-white focus:bg-blue-500 font-semibold text-white bg-black rounded-full" role="button"> Join Now </a>
-                  </div>
-              </div>
+        <div id="activities">
+            <div class="container">
+                <nav>
+                    <img src="IndabaX_Images/Logo_1.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href ="index.html">Home</a></li>
+                        <li><a href ="about.html">About</a></li>
+                        <li><a href ="members.html">Members</a></li>
+                        <li><a href ="club-activities.html">Club activities</a></li>
+                        <li><a href ="SunbirdAI Translate.html">SunbirdAI Translate</a></li>
+                        <li><a href ="Partners.html">Our partners</a></li>
+                        <i class ="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class ="fas fa-bars" onclick="openmenu()"></i>   
+                </nav>
+            </div>
           </header>
 
       </div>
@@ -74,43 +61,36 @@
    <p class="hover:text-gray-900 ">Partners:</p>
     </div>
     <!--Footer-->
-    <section class="py-10 bg-gray-900 sm:pt-16 lg:pt-24 ">
-        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-            <div class="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-4 md:gap-x-12">
-                <div>
-                    <p class="text-base text-gray-500">Indabax AI Club UTAMU</p>
-    
-                    <ul class=" flex lg:items-center lg:justify-left lg:space-x-10">
-                        <li>
-                            <a href="index.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Home </a>
-                        </li>
-                        <li>
-                            <a href="members.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Members </a>
-                        </li>
-                        <li>
-                            <a href="Activities.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Activities </a>
-                        </li>
-                        <li>
-                            <a href="About.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80">About </a>
-                        </li>
-                        <li>
-                            <a href="Partners.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Partners </a>
-                      </li>
-                      <li>
-                        <a href="SunbirdAI Translate.html" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80">SunbirdAI </a>
-                      </li>
-                    </ul>
-                </div>
-    
+    <section class="bg-gray-900 ">
+        <div class="">
+            <div class="">
+
                 
+            </div>
+            <script>
+                var sidemenu= document.getElementById("sidemenu");
+        
+                function openmenu(){
+                    sidemenu.style.right="0";
+                }
+                function closemenu(){
+                    sidemenu.style.right="-200px";
+                }
+            </script>
+        
+               
+    
+               
     
             <hr class="mt-16 mb-10 border-gray-800" />
-        
+            
+
+            <p class="w-full mt-8 text-sm text-center text-gray-100 sm:mt-0 md:mt-0 lg:mt-0 sm:w-auto md:w-auto lg:w-auto xl:w-auto sm:order-2 md:order-2 lg:order-2 xl:order-2">© Copyright 2024, All Rights Reserved by Indabax AI Club UTAMU</p>
     
-            <div class="flex flex-wrap justify-right">
-                <img class="h-8 auto md:order-1 rounded-full" src="IndabaX_Images/Logo_1.jpg" alt="" />
+            <div class="flex flex-wrap ">
+                
     
-                <ul class="flex items-center space-x-3 md:order-3">
+                <ul class="flex justify-end sm:space-x-3 md:space-x-3 lg:space-x-10 xl:space-x-10 sm:order-3 md:order-3 lg:order-3 xl:order-3">
                     <li>
                         <a href="https://x.com/UTAMU/_AI?t=FR7_QAM60tlkssdK0gaKxQs=09" title="Twitter" class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
                             <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -151,11 +131,9 @@
                     </li>
                 </ul>
     
-                <p class="w-full mt-8 text-sm text-center text-gray-100 md:mt-0 md:w-auto md:order-2">© Copyright 2024, All Rights Reserved by Indabax AI Club UTAMU</p>
-                
+               
             </div>
         </div>
-        
     </section>
 
 <body>
