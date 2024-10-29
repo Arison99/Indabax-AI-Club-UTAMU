@@ -1,5 +1,6 @@
 Link to website:
 https://indaxaiclubutamu.github.io/Indabax-AI-Club-UTAMU/
+
 # Indabax AI Club UTAMU
 
 Welcome to the official repository for the Indabax AI Club at UTAMU. This repository contains the source code and assets for our club's website.
@@ -38,7 +39,7 @@ Whatsapp: +256 756 206 363
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indabax AI Club UTAMU</title>
+    
 </head>
 <body>
     <header>
@@ -61,6 +62,4 @@ Whatsapp: +256 756 206 363
     </footer>
 </body>
 </html>
-
-You can reach me on these platforms:
 
