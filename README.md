@@ -32,7 +32,7 @@ Whatsapp: +256 756 206 363
 - GitHub: [Arison99](https://github.com/Arison99)
 
 
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
