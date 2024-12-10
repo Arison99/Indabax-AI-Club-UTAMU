@@ -1,65 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <title> Partners </title>
-
-        <!--Navbar-->
-  <div id="nav-placeholder">
-
-    <header class="">
-  
-        
-        <div id="activities">
-            <div class="container">
-                <nav>
-                    <img src="IndabaX_Images/Logo_1.jpg" class="logo">
-                    <ul id="sidemenu">
-                        <li><a href ="index.html">Home</a></li>
-                        <li><a href ="about.html">About</a></li>
-                        <li><a href ="members.html">Members</a></li>
-                        <li><a href ="club-activities.html">Club activities</a></li>
-                        <li><a href ="SunbirdAI Translate.html">SunbirdAI Translate</a></li>
-                        <li><a href ="Partners.html">Our partners</a></li>
-                        <i class ="fas fa-times" onclick="closemenu()"></i>
-                    </ul>
-                    <i class ="fas fa-bars" onclick="openmenu()"></i>   
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Indabax AI Club UTAMU</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="bg-black text-white">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <img src="IndabaX_Images/Logo_1.jpg" class="logo w-12 h-12">
+            <nav class="hidden md:flex space-x-12 mr-32">
+                <a href="index.html" class="hover:text-gray-400">Home</a>
+                <a href="about.html" class="hover:text-gray-400">About</a>
+                <a href="members.html" class="hover:text-gray-400">Members</a>
+                <a href="club-activities.html" class="hover:text-gray-400">Club activities</a>
+                <a href="SunbirdAI Translate.html" class="hover:text-gray-400">SunbirdAI Translate</a>
+                <a href="Partners.html" class="hover:text-gray-400">Our partners</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <ion-icon name="menu" size="large"></ion-icon>
+                </button>
             </div>
-          </header>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-black text-white">
+            <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+            <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+            <a href="members.html" class="block px-4 py-2 hover:bg-gray-700">Members</a>
+            <a href="club-activities.html" class="block px-4 py-2 hover:bg-gray-700">Club activities</a>
+            <a href="SunbirdAI Translate.html" class="block px-4 py-2 hover:bg-gray-700">SunbirdAI Translate</a>
+            <a href="Partners.html" class="block px-4 py-2 hover:bg-gray-700">Our partners</a>
+        </div>
+    </header>
 
-      </div>
-    
-    </head>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
     <!--Partners-->
-   <div>
-    
-    <ul class="flex items-center justify-center space-x-10">
-        <li>
-            <img class="sm:rounded-full md:rounded-full" src="IndabaX_Images/logo.png">
-        </li>
-        <li>
-            <img class="sm:rounded-full md:rounded-full" src="IndabaX_Images/indabalogo.png">
-        </li>
-        <li>
-            <img class="sm:rounded-full md:rounded-full" src="IndabaX_Images/Utamu-logo.png">
-        </li>
-        <li>
-            <img class="sm:rounded-full md:rounded-full" src="IndabaX_Images/Utamu_soe.jfif">
-        </li>
-        <li>
-            <img class="sm:rounded-full md:rounded-full" src="IndabaX_Images/sunbirdai.png">
-        </li>
-    </ul>
-   </div>
-   <div class="flex  justify-center font-bold leading-tight text-blue-900 sm:text-4xl lg:text-5xl space-x-3">
-   <h1 class="hover:text-yellow-600">Our Golden </h1>
-   <p class="hover:text-gray-900 ">Partners:</p>
+<div class="text-center my-8">
+    <div class="flex flex-wrap justify-center space-x-4 md:space-x-10">
+        <div class="w-1/2 sm:w-auto">
+            <img class="rounded-full mx-auto" src="IndabaX_Images/logo.png">
+        </div>
+        <div class="w-1/2 sm:w-auto">
+            <img class="rounded-full mx-auto" src="IndabaX_Images/indabalogo.png">
+        </div>
+        <div class="w-1/2 sm:w-auto">
+            <img class="rounded-full mx-auto" src="IndabaX_Images/Utamu-logo.png">
+        </div>
+        <div class="w-1/2 sm:w-auto">
+            <img class="rounded-full mx-auto" src="IndabaX_Images/Utamu_soe.jfif">
+        </div>
+        <div class="w-1/2 sm:w-auto">
+            <img class="rounded-full mx-auto" src="IndabaX_Images/sunbirdai.png">
+        </div>
     </div>
+    <div class="mt-8 text-center font-bold leading-tight text-blue-900 text-2xl sm:text-4xl lg:text-5xl">
+        <h1 class="inline hover:text-yellow-600 text-gray-300">Our Golden </h1>
+        <p class="inline hover:text-gray-900">Partners:</p>
+    </div>
+</div>
     <!--Footer-->
     <section class="bg-gray-900 ">
         <div class="">
@@ -67,16 +78,7 @@
 
                 
             </div>
-            <script>
-                var sidemenu= document.getElementById("sidemenu");
-        
-                function openmenu(){
-                    sidemenu.style.right="0";
-                }
-                function closemenu(){
-                    sidemenu.style.right="-200px";
-                }
-            </script>
+
         
                
     

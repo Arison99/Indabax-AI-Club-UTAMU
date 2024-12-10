@@ -1,51 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>SunbirdAI Translation Page</title>
-    <link rel="icon" type="image/x-icon" href="./img/sunbirdAi.svg">
-    <!--Navbar-->
-  <div id="nav-placeholder">
-
-    <header class="">
-  
-        
-        <div id="activities">
-            <div class="container">
-                <nav>
-                    <img src="IndabaX_Images/Logo_1.jpg" class="logo">
-                    <ul id="sidemenu">
-                        <li><a href ="index.html">Home</a></li>
-                        <li><a href ="about.html">About</a></li>
-                        <li><a href ="members.html">Members</a></li>
-                        <li><a href ="club-activities.html">Club activities</a></li>
-                        <li><a href ="SunbirdAI Translate.html">SunbirdAI Translate</a></li>
-                        <li><a href ="Partners.html">Our partners</a></li>
-                        <i class ="fas fa-times" onclick="closemenu()"></i>
-                    </ul>
-                    <i class ="fas fa-bars" onclick="openmenu()"></i>   
-                </nav>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>Indabax AI Club UTAMU</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="bg-black text-white">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <img src="IndabaX_Images/Logo_1.jpg" class="logo w-12 h-12">
+            <nav class="hidden md:flex space-x-12 mr-32">
+                <a href="index.html" class="hover:text-gray-400">Home</a>
+                <a href="about.html" class="hover:text-gray-400">About</a>
+                <a href="members.html" class="hover:text-gray-400">Members</a>
+                <a href="club-activities.html" class="hover:text-gray-400">Club activities</a>
+                <a href="SunbirdAI Translate.html" class="hover:text-gray-400">SunbirdAI Translate</a>
+                <a href="Partners.html" class="hover:text-gray-400">Our partners</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <ion-icon name="menu" size="large"></ion-icon>
+                </button>
             </div>
-          </header>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-black text-white">
+            <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+            <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+            <a href="members.html" class="block px-4 py-2 hover:bg-gray-700">Members</a>
+            <a href="club-activities.html" class="block px-4 py-2 hover:bg-gray-700">Club activities</a>
+            <a href="SunbirdAI Translate.html" class="block px-4 py-2 hover:bg-gray-700">SunbirdAI Translate</a>
+            <a href="Partners.html" class="block px-4 py-2 hover:bg-gray-700">Our partners</a>
+        </div>
+    </header>
 
-      </div>
-    <style>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    <!-- <style>
         body {
-          background-image: url('./img/sunbirdAi.svg');
+          background-image: url('IndabaX_Images/sunbirdAi.svg');
           background-repeat: no-repeat;
           background-attachment: fixed;
-          background-size: 5% 5%;
+          background-size: 50% 30%;
         }
-        </style>
+        </style> -->
 </head>
 <body> 
     
     <form class="flex-nowrap space-y-8" id="translationForm">
         <h1 class="text-blue-600 text-center text-bold text-3xl font-mon0" >SunbirdAI Translation Tool</h1><br>
        
+        <img src="IndabaX_Images/sunbirdAi.svg" class="w-20 h-20 rounded-full mx-auto" alt="">
 
         <div class="space-y-1">
 
@@ -61,11 +76,11 @@
         <div class="flex flex-wrap justify-center space-x-4" >
 
          <label class="text-blue-600 text-center text-bold text-lg " for="sourceLang">Source Language:
-            <input class="text-center rounded-lg shadow-lg italic" type="text" id="sourceLang" placeholder="e.g., eng,lug,ach,teo,lgg,nyn"><br>
+            <input class="text-center rounded-lg shadow-lg italic w-64" type="text" id="sourceLang" placeholder="e.g., eng,lug,ach,teo,lgg,nyn"><br>
          </label>
 
          <label class="text-blue-600 text-center text-bold text-lg" for="targetLang">Target Language:
-           <input class="text-center rounded-lg shadow-lg italic" type="text" id="targetLang" placeholder="e.g., eng,lug,ach,teo,lgg,nyn"><br>
+           <input class="text-center rounded-lg shadow-lg italic w-64" type="text" id="targetLang" placeholder="e.g., eng,lug,ach,teo,lgg,nyn"><br>
          </label>
 
         </div>
@@ -83,8 +98,14 @@
 
         <h2 class="text-center text-blue-600 text-2xl ">Translation Result:</h2>
         <div class="flex justify-center text-wrap text-center shadow-sm" id="translationResult"></div>
-
+       
     </div>
+
+    <!-- <div class="flex justify-center ">
+
+    <textarea class="flex justify-center items-center bg-blue-300 px-4 py-6 text-center rounded-lg shadow-2xl" id="translationResult" rows="10" cols="50"></textarea><br>
+    </div> -->
+
 
     <script>
         const translationUrl = 'https://api.sunbird.ai/tasks/nllb_translate';

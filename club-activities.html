@@ -1,64 +1,243 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club Activities</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/e5ff8bc16b.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div id="activities">
-        <div class="container">
-            <nav>
-                <img src="IndabaX_Images/Logo_1.jpg" class="logo">
-                <ul id="sidemenu">
-                    <li><a href ="index.html">Home</a></li>
-                    <li><a href ="about.html">About</a></li>
-                    <li><a href ="members.html">Members</a></li>
-                    <li><a href ="club-activities.html">Club activities</a></li>
-                    <li><a href ="SunbirdAI Translate.html">SunbirdAI Translate</a></li>
-                    <li><a href ="Partners.html">Our partners</a></li>
-                    <i class ="fas fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class ="fas fa-bars" onclick="openmenu()"></i>   
-            </nav>
-        </div>
-    </div>
-     
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.tailwindcss.com"></script>    <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/e5ff8bc16b.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <title>Indabax AI Club UTAMU</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header class="bg-black text-white">
+            <div class="container mx-auto flex justify-between items-center p-4">
+                <img src="IndabaX_Images/Logo_1.jpg" class="logo w-12 h-12">
+                <nav class="hidden md:flex space-x-12 mr-32">
+                    <a href="index.html" class="hover:text-gray-400">Home</a>
+                    <a href="about.html" class="hover:text-gray-400">About</a>
+                    <a href="members.html" class="hover:text-gray-400">Members</a>
+                    <a href="club-activities.html" class="hover:text-gray-400">Club activities</a>
+                    <a href="SunbirdAI Translate.html" class="hover:text-gray-400">SunbirdAI Translate</a>
+                    <a href="Partners.html" class="hover:text-gray-400">Our partners</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <ion-icon name="menu" size="large"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden bg-black text-white">
+                <a href="index.html" class="block px-4 py-2 hover:bg-gray-700">Home</a>
+                <a href="about.html" class="block px-4 py-2 hover:bg-gray-700">About</a>
+                <a href="members.html" class="block px-4 py-2 hover:bg-gray-700">Members</a>
+                <a href="club-activities.html" class="block px-4 py-2 hover:bg-gray-700">Club activities</a>
+                <a href="SunbirdAI Translate.html" class="block px-4 py-2 hover:bg-gray-700">SunbirdAI Translate</a>
+                <a href="Partners.html" class="block px-4 py-2 hover:bg-gray-700">Our partners</a>
+            </div>
+        </header>
+    
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+    
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        </script>
      <div id="club-Activities">
         <div class="container">
             <h1 class="sub-title">Club Activities</h1>  
             <p class="activities-desc">At Indabax AI Club UTAMU, we host weekly sessions online & physical.</p> 
             <div class="activities-list">
                <div>
-                <h2>History of Artificial Intelligence</h2>
-                <p>The history of artificial intelligence (AI) traces back to the mid-20th century, when the idea of creating machines capable of simulating human intelligence emerged.
-                    In 1956, the term "artificial intelligence" was coined at the Dartmouth Conference, marking the formal beginning of AI research. 
-                    Early developments focused on symbolic reasoning and problem-solving. 
-                    In the 1980s, expert systems gained prominence, but progress slowed due to technical limitations. The resurgence of AI in the 21st century, fueled by advances in machine learning,
-                    big data, and computational power, has led to rapid growth in applications like natural language processing, computer vision, and robotics. 
-                    AI's history reflects a journey from theoretical concepts to real-world impact.</p>
-                <a href="#"></i>Learn more here</a>
+                <h2 class="text-gray-400">Machine-Learning-Model-Classifying-Iris-Species</h2>
+                <p>
+                    <!-- <h1 class="text-gray-500">Iris Classification Model</h1> -->
+
+                    <h2>Project Overview</h2>
+                    <p>
+                      This project is a machine learning model designed to classify Iris flower species (Setosa, Versicolor, Virginica) based on their sepal and petal dimensions. The model was trained and evaluated using the Iris dataset, a classic dataset in machine learning.
+                    </p>
+                    
+                    <h2>Features</h2>
+                    <ul>
+                      <li><strong>Data:</strong> The model uses the well-known Iris dataset, which includes 150 samples with 4 features (sepal length, sepal width, petal length, petal width) and 3 target classes.</li>
+                      <li><strong>Algorithm:</strong> K-Nearest Neighbors</li>
+                      <li><strong>Accuracy:</strong> 97%</li>
+                    </ul>
+                    
+                    <h2>Installation</h2>
+                    <p>To run this project locally, you’ll need to have:</p>
+                    <ul>
+                      <li>Python 3</li>
+                      <li>Required libraries: Pandas, Numpy, Matplotlib, Scikit Learn, Mglearn</li>
+                    </ul>
+                    
+                    <h2>Step-by-Step Guide</h2>
+                    <p>Clone the repository:</p>
+                    <!-- <p class="font-semibold flex text-start">
+                    git clone https://github.com/ofwonogodwin/Machine-Learning-Model-Classifying-Iris-Species
+                    </p> -->
+                    <p>Install the required libraries:</p>
+                    <p class="font-semibold ">
+                    pip install pandas numpy matplotlib scikit-learn mglearn
+                    </p>
+                    
+                    <h2>Usage</h2>
+                    <ul>
+                      <li><strong>Training:</strong> Adjust parameters in the model file to retrain the model.</li>
+                      <li><strong>Testing:</strong> Use your data or test samples to evaluate model performance.</li>
+                    </ul>
+                    
+                    <h2>Future Improvements</h2>
+                    <ul>
+                      <li>Implement hyperparameter tuning for better accuracy.</li>
+                      <li>Experiment with other algorithms or ensemble methods.</li>
+                    </ul>
+                    
+                    <h2>Repository Stats</h2>
+                    <p class="space-y-4">
+                      <img alt="Stars" src="https://img.shields.io/github/stars/Arison99/Yo-clinic-v.1.0.2?style=social">
+                      <img alt="Forks" src="https://img.shields.io/github/forks/Arison99/Yo-clinic-v.1.0.2?style=social">
+                      <img alt="Watchers" src="https://img.shields.io/github/watchers/Arison99/Yo-clinic-v.1.0.2?style=social">
+                    </p>
+                    </p>
+                <a href="https://github.com/ofwonogodwin/Machine-Learning-Model-Classifying-Iris-Species"></i>Learn more here</a>
                 </div>
                 <div>
                     
-                    <h2>AI in Astrophysics</h2>
+                    <!-- <h2>Feature-Engineering-using-STD-PDF-Curve
+                        </h2>
                     <p>AI in physics leverages machine learning and data-driven algorithms to solve complex problems, analyze large datasets, and make predictions in various areas of physics. AI techniques,
                         such as neural networks and reinforcement learning, are used to model physical systems, simulate quantum states, optimize experiments, and discover new materials. 
                         By accelerating calculations and uncovering hidden patterns, AI enhances traditional physics methods, aiding in research on topics like particle physics, astrophysics, and condensed matter.
                          AI helps physicists tackle challenges that are difficult or impossible to solve using conventional techniques alone.</p>
-                    <a href="#">Learn more here</a>
+                    <a href="https://github.com/ofwonogodwin/Feature-Engineering-using-STD-PDF-Curve">Learn more here</a>
+                </div>
+                <div> -->
+                    <h2>Feature Engineering using STD PDF Curve</h2>
+                    <!-- <p>This project focuses on feature engineering using the Standard Deviation Probability Density Function (STD PDF) curve. Feature engineering is a crucial step in the machine learning pipeline, where raw data is transformed into meaningful features that can improve the performance of machine learning models.</p> -->
+                    
+                    <h2>Project Overview</h2>
+                    <p>The goal of this project is to demonstrate how the STD PDF curve can be used to create new features from existing data. By analyzing the distribution of data and calculating the standard deviation, we can generate features that capture important statistical properties of the data.</p>
+                    
+                    <h2>Features</h2>
+                    <ul>
+                        <li><strong>Data:</strong> The project uses a sample dataset to illustrate the feature engineering process.</li>
+                        <li><strong>Algorithm:</strong> The STD PDF curve is used to create new features based on the standard deviation of the data.</li>
+                        <li><strong>Visualization:</strong> The project includes visualizations to help understand the distribution of data and the generated features.</li>
+                    </ul>
+                    
+                    <!-- <h2>Installation</h2>
+                    <p>To run this project locally, you’ll need to have:</p>
+                    <ul>
+                        <li>Python 3</li>
+                        <li>Required libraries: Pandas, Numpy, Matplotlib, Scikit-learn</li>
+                    </ul> -->
+                    
+                    <h2>Step-by-Step Guide</h2>
+                    <!-- <p>Clone the repository:</p>
+                    <p class="font-semibold">git clone https://github.com/ofwonogodwin/Feature-Engineering-using-STD-PDF-Curve</p> -->
+                    <p>Install the required libraries:</p>
+                    <p class="font-semibold">pip install pandas numpy matplotlib scikit-learn</p>
+                    
+                    <h2>Usage</h2>
+                    <ul>
+                        <li><strong>Feature Engineering:</strong> Use the provided scripts to generate new features from your data.</li>
+                        <li><strong>Visualization:</strong> Visualize the distribution of data and the generated features using the provided plots.</li>
+                    </ul>
+                    
+                    <h2>Future Improvements</h2>
+                    <ul>
+                        <li>Explore other statistical measures for feature engineering.</li>
+                        <li>Implement automated feature selection techniques.</li>
+                    </ul>
+                    
+                    <h2>Repository Stats</h2>
+                    <p class="space-y-4">
+                        <img alt="Stars" src="https://img.shields.io/github/stars/ofwonogodwin/Feature-Engineering-using-STD-PDF-Curve?style=social">
+                        <img alt="Forks" src="https://img.shields.io/github/forks/ofwonogodwin/Feature-Engineering-using-STD-PDF-Curve?style=social">
+                        <img alt="Watchers" src="https://img.shields.io/github/watchers/ofwonogodwin/Feature-Engineering-using-STD-PDF-Curve?style=social">
+                    </p>
+                    <a class="" href="https://github.com/ofwonogodwin/Feature-Engineering-using-STD-PDF-Curve">Learn more here</a>
                 </div>
                 <div>
                     
                     <h2>Data Visualization using Matplotlib</h2>
-                    <p>Data visualization using Matplotlib involves creating a wide range of static, interactive, and animated plots to represent data graphically.
-                        As one of the most popular Python libraries for visualization, Matplotlib provides functions to generate line charts, bar graphs, scatter plots, histograms, and more.
-                         It allows customization of axes, labels, colors, and other plot elements, making it highly flexible for conveying insights from data.
-                          Whether for exploratory data analysis or presenting findings, Matplotlib helps to transform numerical data into meaningful visual representations, aiding in better understanding and decision-making.</p>
-                    <a href="#">Learn more here</a>
+                    <p>
+
+                        <!-- <h>Data Visualization in Matplotlib </h> -->
+                        
+                        <div class="flex justify-center items-center space-x-3">
+                            <img src="https://img.shields.io/badge/forks-1-blue" alt="Forks">
+                        <img src="https://img.shields.io/badge/stars-2-yellow" alt="Stars">
+                        <img src="https://img.shields.io/badge/contributors-2-blue" alt="Contributors">
+                        </div>
+
+                        <p>This repo contains different data visualization techniques in Python.</p>
+                        
+                        <!-- <h1>Table of Contents</h1> -->
+                        
+                      <!-- <p>
+                        - [Introduction](#introduction)
+                        - [Installation](#installation)
+                        - [Usage](#usage)
+                        - [Features](#features)
+                        - [Contributing](#contributing)
+                        - [License](#license)
+                        - [Contact]
+                      
+                      </p>   -->
+                        <p>Introduction</p>
+                        <p>This repository showcases various data visualization techniques using Matplotlib in Python. It is intended to help users understand and implement different types of visualizations for their data analysis projects.</p>
+
+                        <!-- <h2>Installation</h2> -->
+                        <p>To get started with this project, clone the repository to your local machine.</p>
+                        <!-- <pre><code>git clone https://github.com/Arison99/Data-Visualization-in-Matplotlib.git</code></pre> -->
+                        <!-- <p>Then, navigate to the project directory:</p>
+                        <pre><code>cd Data-Visualization-in-Matplotlib</code></pre> -->
+                        <p>It's recommended to use a virtual environment for managing dependencies. You can create one using:</p>
+                        <pre><code>python -m venv env</code></pre>
+                        <!-- <p>Activate the virtual environment:</p>
+                        <ul>
+                            <li>On Windows: <code>env\Scripts\activate</code></li>
+                            <li>On macOS/Linux: <code>source env/bin/activate</code></li>
+                        </ul> -->
+                        <p>Install the required packages:</p>
+                        <p><code>pip install -r requirements.txt</code></p>
+
+                        <h2>Usage</h2>
+                        <p>To use the data visualization scripts, simply run them with Python:</p>
+                        <pre><code>python script_name.py</code></pre>
+                        <p>Replace <code>script_name.py</code> with the name of the script you wish to run.</p>
+
+                        <h2>Features</h2>
+                        <ul>
+                            <li><strong>Bar Charts</strong>: Demonstrates how to create bar charts to compare categorical data.</li>
+                            <li><strong>Line Graphs</strong>: Shows how to plot line graphs to visualize trends over time.</li>
+                            <li><strong>Scatter Plots</strong>: Illustrates how to use scatter plots to identify relationships between variables.</li>
+                            <li><strong>Histograms</strong>: Provides examples of creating histograms for data distribution analysis.</li>
+                        </ul>
+
+                        <!-- <h2>Contributing</h2>
+                        <p>Contributions are welcome! If you have any suggestions or improvements, please open an issue or submit a pull request.</p>
+                        <ol>
+                            <li>Fork the repository</li>
+                            <li>Create a new branch (<code>git checkout -b feature-branch</code>)</li>
+                            <li>Make your changes</li>
+                            <li>Commit your changes (<code>git commit -am 'Add new feature'</code>)</li>
+                            <li>Push to the branch (<code>git push origin feature-branch</code>)</li>
+                            <li>Open a pull request</li>
+                        </ol> -->
+
+                        <!-- <h2>License</h2>
+                        <p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p> -->
+
+                        <h2>Contact</h2>
+                        <p>For any questions or inquiries, please reach out to <a href="https://github.com/Arison99">Arison99</a>.</p>    <a href="https://github.com/Arison99/Data-Visualization-in-Matplotlib">Learn more here</a>
                </div> 
                <div>
                     <h2>AI in Ecology</h2>
